@@ -28,7 +28,7 @@ public class HumanTest {
 
     @Test
     public void verifyName() {
-        Human cyprian = new Human(8, "Cyprian", "Mulawa");
+        Human cyprian = new Human(8, "Cyprian", "Kowalski");
         assert cyprian.getName() == "Cyprian";
     }
     @Test
@@ -40,6 +40,21 @@ public class HumanTest {
         assert jessica.getAge() == 21;
         jessica.setLastName("Rainbow");
         assert jessica.getLastName() == "Rainbow";
+    }
+
+    @Test
+    public void verifyLastName() {
+        Human bianka = new Human(6, "Bianka", "Nowak");
+        bianka.setLastName("Kowalska");
+        assert bianka.getLastName() == "Kowalska";
+    }
+
+    @Test
+    public void verifyLastNameGetter() {
+        Human borsuk = new Human(56, "Borsuk", "Turban");
+        assert borsuk.getLastName() == "Turban";
+
+
     }
 
 }
