@@ -57,4 +57,18 @@ public class HumanTest {
 
     }
 
+    @Test
+    public void alco() {
+        Human slawek = new Human();
+        slawek.setAge(18);
+        assert slawek.canBuyAlcohol() == true;
+    }
+    @Test
+            public void alco1() {
+        Human slawek = new Human();
+        slawek.setAge(17);
+        assert slawek.canBuyAlcohol() == false;
+    }
+
+
 }
