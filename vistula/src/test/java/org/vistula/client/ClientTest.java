@@ -15,4 +15,12 @@ public class ClientTest {
 
 
     }
+
+    @Test
+    public void clientisNotTall() {
+        Client person = new Client("John", 45, 185, 76,false);
+        person.setHeight(185);
+        assert person.isShort() == false;
+
+    }
 }

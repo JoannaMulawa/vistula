@@ -60,4 +60,13 @@ public class Client {
         }
         return isWoman;
     }
+
+    public boolean isShort() {
+        if (height < 150) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
